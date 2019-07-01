@@ -60,6 +60,8 @@ var List = function (_React$Component2) {
         React.createElement(
           "div",
           { className: "jumbotron opacity_container" },
+           React.createElement(Link, { link: "https://freelancerjava.github.io/portfolio/textile1/",
+            value: "Textile factory site" }),
           React.createElement(Link, { link: "https://freelancerjava.github.io/portfolio/ronc/",
             value: "Medical Clinic site" }),
           React.createElement(Link, { link: "https://freelancerjava.github.io/portfolio/ovk/",
