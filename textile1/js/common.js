@@ -16,7 +16,7 @@ $(function() {
 		$(".close").css("display","none");
 	})
 
-	$("#myVideo").on("click", function(){
+	$("#myVideo").on("click pause", function(){
 		pauseVid();
 		$(".close").css("display","flex");		
 	})
