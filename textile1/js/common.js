@@ -1,5 +1,88 @@
 $(function() {
 
+	var vid = document.getElementById("myVideo"); 
+	var flag = false;
+
+	function playVid() { 
+	vid.play(); 
+	} 
+
+	function pauseVid() { 
+	vid.pause(); 
+	} 
+
+	$(".close").on("click", function(){
+		playVid();
+		$(".close").css("display","none");
+	})
+
+	$("#myVideo").on("click", function(){
+		pauseVid();
+		$(".close").css("display","flex");		
+	})
+
+	$("#lang").selectize({
+		"hideSelected":true,
+	});
+	$(".menu-main").click(function() {
+		$("html, body").animate({
+			scrollTop : $(".header").offset().top
+		}, 800);
+	});
+
+	$(".menu-prod").click(function() {
+		$("html, body").animate({
+			scrollTop : $(".section1").offset().top
+		}, 800);
+	});
+
+	$(".menu-make").click(function() {
+		$("html, body").animate({
+			scrollTop : $(".section2").offset().top
+		}, 800);
+	});
+
+	$(".menu-price").click(function() {
+		$("html, body").animate({
+			scrollTop : $(".section3").offset().top
+		}, 800);
+	});
+
+	$(".menu-partner").click(function() {
+		$("html, body").animate({
+			scrollTop : $(".section4").offset().top
+		}, 800);
+	});
+
+	$(".menu-contact").click(function() {
+		$("html, body").animate({
+			scrollTop : $(".section5").offset().top
+		}, 800);
+	});
+
+	
+
+	$(".car-brands").owlCarousel({
+		loop:true,
+		margin: 0,
+		nav: true,
+		navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+		responsive:{
+				0:{
+						items:3,
+				},
+				768:{
+						items:3,
+				},
+				992:{
+						items:3,
+				},
+				1200:{
+						items:5,
+				}
+		}
+	});
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
@@ -67,6 +150,8 @@ function toggleClass(elem, className) {
         elem.className += ' ' + className;
     }
 }
+
+
 
 
 

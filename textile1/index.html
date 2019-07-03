@@ -1750,7 +1750,7 @@
 	<!-- Здесь пишем код -->
 
 	<header class="header">
-		<div class="top-line">
+		<div class="top-line ">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-2">
@@ -1769,7 +1769,7 @@
 										<span class="email">
 											<i class="fa fa-envelope"></i> finist-invest@mail.ru
 										</span>
-										<div class="search" contenteditable="true">
+										<div class="search hidden" contenteditable="true">
 											<i class="fa fa-search"></i>
 										</div>
 									</div>
@@ -1779,19 +1779,25 @@
 								<div class="col-md-10">
 									<div class="menu">
 										<ul>
-											<li><a href="#">о нас</a></li>
-											<li><a href="#">продукция и услуги</a></li>
-											<li><a href="#">производство</a></li>
-											<li><a href="#">цены</a></li>
-											<li><a href="#">партнерам</a></li>
-											<li><a href="#">контакты</a></li>
+											<li><a href="#" class="menu-main">о нас</a></li>
+											<li><a href="#" class="menu-prod">продукция и услуги</a></li>
+											<li><a href="#" class="menu-make">производство</a></li>
+											<li><a href="#" class="menu-price">цены</a></li>
+											<li><a href="#" class="menu-partner">партнерам</a></li>
+											<li><a href="#" class="menu-contact">контакты</a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="col-md-2">
 									<div class="lang">
-										<img src="./img/russian_flag.png" alt=""> RU
-										<i class="fa fa-angle-down"></i>
+										<select id="lang">
+											<option value="uz" style="background-image:url(./img/russian_flag.png);">UZ
+											</option>
+											<option value="en" style="background-image:url(./img/russian_flag.png);">EN
+											</option>
+											<option value="ru" style="background-image:url(./img/russian_flag.png);">RU
+											</option>
+										</select>
 									</div>
 								</div>
 							</div>
@@ -1813,12 +1819,381 @@
 				</div>
 				<div class="right">
 					<div class="video">
-						<img src="./img/play_btn.png" alt="">
+						<video id="myVideo" width="400" controls>
+							<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+							<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+							Your browser does not support HTML5 video.
+						</video>
+						<div class="close">
+								<img src="./img/play_btn.png" alt="">
+						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+
+	<section class="section1" id="prod">
+		<div class="container">
+			<div class="title">
+				<span>
+					Продукция и услуги <br />
+					<span></span>
+				</span>
+			</div>
+			<div class="s1-content">
+				<div class="left">
+					<div class="img">
+						<img src="./img/s1-1.png" alt="">
+					</div>
+				</div>
+				<div class="right">
+					<div class="text">
+						<p>Стальные диски заготовки для пил хлопкоочистительных машин.</p>
+						<p>Диск Д-61,8 (5 ЛП)</p>
+						<p>Диск Д-100,0 (ДП-130)</p>
+						<p>Диск MR-160 75 mm ЛП (с использованием китайской техники производства)</p>
+						<p>Производство BOPP пленок.</p>
+						<p>Крашенная текстильная цветная нить из полиэстера. Услуги по окрашиванию х/б,
+							нейлоновых, полиэстеровых и всех видов пряжи и целлюлозных, текстильных, натуральных волокон
+							и нити.</p>
+					</div>
+					<div class="show">
+						<a href="#" class="btn">
+							посмотреть
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section2">
+		<div class="container">
+			<div class="title">
+				<span>
+					Производство <br />
+					<span></span>
+				</span>
+			</div>
+			<div class="s2-content">
+				<div class="s2-1">
+					<div class="left">
+						<div class="t-title">
+							Цех по производству стальных дисков заготовок для пил хлопкоочистительных машин.
+						</div>
+						<div class="text">
+							В 2016 году компания завершила реализацию проекта по
+							строительству нового производства джинных и литерных
+							- стальных дисков заготовок для пил хлопкоочистительных машин.
+							Сегодня компания вышла на проектные мощности и стабильно работает.
+							В производстве используются сырье из термически обработанной стали марки 65Г и У8Г.
+							Также продукция прошла сертификат соответствия по требованиям ГОСТ.
+							Ведется строгий контроль качества на каждом этапе производства,
+							начиная с сырья до готовой продукции. Весь производственный
+							персонал проходит специализированное обучение.
+						</div>
+
+					</div>
+					<div class="right">
+						<div class="img">
+							<img src="./img/s2-disk.png" class="fa fa-spin" alt="">
+							<img src="./img/s2-disk-shadow.png" alt="" class="shadow">
+						</div>
+					</div>
+				</div>
+				<div class="show">
+					<a href="#" class="btn">
+						посмотреть
+					</a>
+				</div>
+
+				<div class="s2-2">
+					<div class="left">
+						<div class="img">
+							<img src="./img/s2-mask.png" class="" alt="">
+							<!-- <img src="./img/s2-disk-shadow.png" alt="" class="shadow"> -->
+						</div>
+					</div>
+					<div class="right">
+						<div class="t-title">
+							Цех по окрашиванию х/б, нейлоновых,
+							полиэстеровых и всех видов пряжи и целлюлозных, текстильных, натуральных волокон и нити.
+						</div>
+						<div class="text">
+							В 2018 году, компания запустила цех по окрашиванию пряжи
+							из 100% полиэстера - х/б, нейлоновых, и всех видов пряжи
+							из целлюлозы, текстильных, натуральных волокон и нитей.
+							Сегодня компания разрабатывает и производит широкий ассортимент
+							цветов с использованием текстильных и химических технологий.
+							Производство оснащено лучшим оборудованием и богатым опытом
+							в области крашения. Наши Специалисты сами разрабатывают рецептуру
+							красителей и в настоящее время используется более чем 400 видов цветов.
+							Лаборатория имеет возможность разрабатывать цвета любой сложности, производить
+							анализ на содержание химических веществ, а также разрабатывать рецептуры и
+							расписывать весь цикл процесса крашения для получения оптимального результата
+							при крашении пряжи. Мы являемся лидером по окрашиванию в соответствии с экологическими
+							нормами - в наших процессах окрашивания не используются вредные химические вещества,
+							а наши красители безопасны для чувствительной кожи.
+							С каталогом цветов вы сможете ознакомится на нашем сайте.
+						</div>
+
+					</div>
+				</div>
+				<div class="show">
+					<a href="#" class="btn">
+						посмотреть
+					</a>
+				</div>
+
+				<div class="s2-3">
+					<div class="left">
+						<div class="t-title">
+							Производство биаксильно – ориентированных полипропиленовых пленок.
+						</div>
+						<div class="text">
+							Компания производит упаковочные прозрачные БОПП – пленки с низким порогом сваривания, для
+							печати, ламинации и упаковки пищевых и непищевых продуктов. Пленка содержит не запотевающие
+							антиблокируюшие добавки.
+							Трехслойная упаковочная продукция из биаксиально-ориентированных полипропиленовых пленок
+							(БОПП-пленки), любых форм и размеров.
+							Термосвариваемая прозрачная пленка для печати и упаковки, содержит незапотеваюшие
+							антиблокирующие добавки.
+							Основные свойства: Имеет хорошую прозрачность во влажных условиях. Предназначена для
+							контакта с пищевыми продуктами и не пищевых изделий и продуктов. Задерживает порчу
+							продуктов. Имеет активацию с двух сторон. Высококачественная ротогравюрная и
+							флексографическая печать. Самостоятельное применение в упаковке. Упаковка для свежих фруктов
+							и овощей.
+
+						</div>
+
+					</div>
+					<div class="right">
+						<div class="img">
+							<img src="./img/s2-lenta.png" class="s2-3" alt="">
+							<!-- <img src="./img/s2-disk-shadow.png" alt="" class="shadow"> -->
+						</div>
+					</div>
+				</div>
+				<div class="show">
+					<a href="#" class="btn">
+						посмотреть
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section3">
+		<div class="container">
+			<div class="title">
+				<span>
+					Цены <br />
+					<span></span>
+				</span>
+			</div>
+			<div class="s3-content">
+				<div class="show">
+					<a href="#" class="btn pink">посмотреть все <br /> товары</a>
+				</div>
+				<div class="products">
+					<div class="product">
+						<div class="img">
+							<img src="./img/disk.png" alt="">
+						</div>
+						<div class="p-title">
+							диски заготовки
+						</div>
+						<div class="price">
+							$ 55.99
+						</div>
+						<div class="show">
+							<a href="#" class="btn p-btn">заказать</a>
+						</div>
+					</div>
+					<div class="product p2">
+						<div class="img">
+							<img src="./img/p2-sew.png" alt="">
+						</div>
+						<div class="p-title">
+							натуральная нить
+						</div>
+						<div class="price">
+							$ 7.99
+						</div>
+						<div class="show">
+							<a href="#" class="btn p-btn">заказать</a>
+						</div>
+					</div>
+					<div class="product p3">
+						<div class="img">
+							<img src="./img/p3-lenta.png" alt="">
+						</div>
+						<div class="p-title">
+							полипропиленовые пленки
+						</div>
+						<div class="price">
+							$ 23.99
+						</div>
+						<div class="show">
+							<a href="#" class="btn p-btn">заказать</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="section4">
+		<div class="container">
+			<div class="title">
+				<span>
+					партнерам <br />
+					<span></span>
+				</span>
+			</div>
+			<div class="bg-blue">
+				<div class="text">
+					Продукция нашей компании занимает достойные
+					позиции на рынке Узбекистана. Нас связывают
+					прочные партнерские отношения со многими ведущими
+					предприятиями, при этом мы заинтересованы в сотрудничестве
+					с каждым новым клиентом. Мы регулярно расширяем ассортимент
+					нашей продукции и предлагаем гибкую систему скидок. Быстрое
+					реагирование на заказ нашими менеджерами позволяет сократить
+					время ожидания в производстве продукции.
+				</div>
+				<div class="car-bg">
+					<div class="car-brands owl-theme">
+						<div class="car-item">
+							<img src="./img/car1.png" alt="">
+						</div>
+						<div class="car-item">
+							<img src="./img/car2.png" alt="">
+						</div>
+						<div class="car-item">
+							<img src="./img/car3.png" alt="">
+						</div>
+						<div class="car-item">
+							<img src="./img/car4.png" alt="">
+						</div>
+						<div class="car-item">
+							<img src="./img/car5.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</section>
+
+	<section class="section5">
+		<div class="container">
+			<div class="title">
+				<span>
+					контакты <br />
+					<span></span>
+				</span>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="s5-content">
+						<div class="address">
+							<div class="fa">
+								<i class="fa fa-map-marker"></i>
+							</div>
+							<div class="fi-text">
+								110300, Республика Узбекистан, Ташкентская область, Ахангаранский район, Озодлик Эйвалек
+								МФЙ, СЭЗ «Ангрен»
+							</div>
+						</div>
+						<div class="post">
+							<div class="fa">
+								<i class="fa fa-card"></i>
+							</div>
+							<div class="fi-text">
+								Республика Узбекистан, г. Ташкент, Чиланзарский район, ул. Бешягач, д.1.
+							</div>
+						</div>
+						<div class="phone">
+							<div class="fa">
+								<i class="fa fa-mobile"></i>
+							</div>
+							<div class="fi-text">
+								+998994444709 <br />
+								+998994444709 <br />
+								+998994444709 <br />
+							</div>
+						</div>
+						<div class="email">
+							<div class="fa">
+								<i class="fa fa-envelope"></i>
+							</div>
+							<div class="fi-text">
+								finist-invest@mail.ru
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="contact-form">
+						<div class="quest">
+							остались вопросы ?
+						</div>
+						<div class="answer">
+							задайте их нам
+						</div>
+						<form action="#">
+							<div class="form">
+								<div class="left">
+									<div class="name">
+										<input class="form-input" type="text" placeholder="Как Вас зовут?">
+									</div>
+									<div class="phone">
+										<input class="form-input" type="text" placeholder="Ваш телефон?">
+									</div>
+									<div class="show">
+										<a href="#" class="btn pink">задать вопрос</a>
+									</div>
+								</div>
+								<div class="right">
+									<textarea name="decription" id="" class="form-input" cols="30" rows="10"
+										placeholder="Ваш вопрос"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="img">
+				<img src="./img/map.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+
+		<div class="logo"><img src="./img/logo.svg" alt=""></div>
+		<div class="menu">
+			<ul>
+				<li><a href="#" class="menu-main">о нас</a></li>
+				<li><a href="#" class="menu-prod">продукция и услуги</a></li>
+				<li><a href="#" class="menu-make">производство</a></li>
+				<li><a href="#" class="menu-price">цены</a></li>
+				<li><a href="#" class="menu-partner">партнерам</a></li>
+				<li><a href="#" class="menu-contact">контакты</a></li>
+			</ul>
+		</div>
+	</footer>
+
+
+
 
 	<div class="hidden"></div>
 
