@@ -542,7 +542,11 @@ a {
   color: #f1b82e;
   outline: none !important; }
   a:hover, a:link {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #ffffff; }
+  a:hover {
+    mix-blend-mode: normal;
+    text-shadow: 0px 0px 9px #FFFFFF; }
 
 .hidden {
   display: none; }
