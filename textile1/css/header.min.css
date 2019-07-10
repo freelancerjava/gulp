@@ -362,7 +362,13 @@
       margin-right: -5px;
       margin-left: -5px;
       margin-top: 10px;
-      margin-bottom: -1000px; } }
+      margin-bottom: -1000px; }
+  .section3 .s3-content .products .product .img {
+    margin-bottom: 10px; }
+  .section3 .s3-content .products .product .p-title {
+    margin-top: 5px; }
+  .section3 .s3-content .products .product .show {
+    margin-top: 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -489,7 +495,19 @@
       padding-top: 20px;
       padding-bottom: 20px; }
       .section5 .img img {
-        width: 70%; } }
+        width: 70%; }
+  .section4 .bg-blue {
+    margin-right: -10px;
+    margin-left: -10px;
+    padding: 30px;
+    padding-bottom: 200px;
+    margin-bottom: 100px; }
+    .section4 .bg-blue .car-bg {
+      padding: 20px;
+      overflow: hidden;
+      margin-right: -30px;
+      margin-left: -30px;
+      margin-top: 30px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
