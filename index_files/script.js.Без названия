@@ -67,7 +67,9 @@ var List = function (_React$Component2) {
           React.createElement(Link, { link: "https://freelancerjava.github.io/portfolio/ovk/",
             value: "OVK Building site" }),
           React.createElement(Link, { link: "https://freelancerjava.github.io/portfolio/jobhunter/",
-            value: "Job Hunter site" })
+            value: "Job Hunter site" }),
+           React.createElement(Link, { link: "https://freelancerjava.github.io/portfolio/fitnes/",
+            value: "Fitnes drugs site" })
         )
       );
     }
