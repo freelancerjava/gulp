@@ -69,18 +69,18 @@
     -ms-flex-direction: column;
     flex-direction: column; }
     .header .content .right .video {
-      width: 200px;
-      height: 200px; } }
+      width: 400px;
+      height: 400px; } }
     @media only screen and (max-width: 992px) and (min-width: 320px) {
       .header .content .right .video {
-        width: -webkit-calc(200px + 600 * ((100vw - 320px) / 880));
-        width: calc(200px + 600 * ((100vw - 320px) / 880));
-        height: -webkit-calc(200px + 600 * ((100vw - 320px) / 880));
-        height: calc(200px + 600 * ((100vw - 320px) / 880)); } }
+        width: -webkit-calc(400px + 200 * ((100vw - 320px) / 880));
+        width: calc(400px + 200 * ((100vw - 320px) / 880));
+        height: -webkit-calc(400px + 200 * ((100vw - 320px) / 880));
+        height: calc(400px + 200 * ((100vw - 320px) / 880)); } }
     @media only screen and (max-width: 992px) and (min-width: 1200px) {
       .header .content .right .video {
-        width: 800px;
-        height: 800px; } }
+        width: 600px;
+        height: 600px; } }
 
 @media only screen and (max-width: 992px) {
   .popup-content {
@@ -236,14 +236,14 @@
     -ms-flex-direction: column;
     flex-direction: column; }
     .header .content .right .video {
-      width: 100px;
-      height: 100px; } }
+      width: 300px;
+      height: 300px; } }
     @media only screen and (max-width: 600px) and (min-width: 320px) {
       .header .content .right .video {
-        width: -webkit-calc(100px + 100 * ((100vw - 320px) / 880));
-        width: calc(100px + 100 * ((100vw - 320px) / 880));
-        height: -webkit-calc(100px + 100 * ((100vw - 320px) / 880));
-        height: calc(100px + 100 * ((100vw - 320px) / 880)); } }
+        width: -webkit-calc(300px + -100 * ((100vw - 320px) / 880));
+        width: calc(300px + -100 * ((100vw - 320px) / 880));
+        height: -webkit-calc(300px + -100 * ((100vw - 320px) / 880));
+        height: calc(300px + -100 * ((100vw - 320px) / 880)); } }
     @media only screen and (max-width: 600px) and (min-width: 1200px) {
       .header .content .right .video {
         width: 200px;
@@ -517,21 +517,23 @@
   /**/
   /* Medium Devices, Desktops */ }
 
-@media only screen and (max-height: 500px) and (min-width: 1200px) {
+@media only screen and (max-height: 700px) {
   /****/
-  .header .content .right .video {
-    width: 100px;
-    height: 100px; } }
-  @media only screen and (max-height: 500px) and (min-width: 1200px) and (min-width: 320px) {
+  .header {
+    height: 200vh; }
     .header .content .right .video {
-      width: -webkit-calc(100px + 300 * ((100vw - 320px) / 880));
-      width: calc(100px + 300 * ((100vw - 320px) / 880));
-      height: -webkit-calc(100px + 300 * ((100vw - 320px) / 880));
-      height: calc(100px + 300 * ((100vw - 320px) / 880)); } }
-  @media only screen and (max-height: 500px) and (min-width: 1200px) and (min-width: 1200px) {
-    .header .content .right .video {
-      width: 400px;
-      height: 400px; } }
+      width: 300px;
+      height: 300px; } }
+    @media only screen and (max-height: 700px) and (min-width: 320px) {
+      .header .content .right .video {
+        width: -webkit-calc(300px + 100 * ((100vw - 320px) / 880));
+        width: calc(300px + 100 * ((100vw - 320px) / 880));
+        height: -webkit-calc(300px + 100 * ((100vw - 320px) / 880));
+        height: calc(300px + 100 * ((100vw - 320px) / 880)); } }
+    @media only screen and (max-height: 700px) and (min-width: 1200px) {
+      .header .content .right .video {
+        width: 400px;
+        height: 400px; } }
 
 body {
   min-width: 320px;
