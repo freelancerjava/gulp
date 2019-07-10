@@ -159,7 +159,7 @@ $(function () {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "./theme/app/mail.php", //Change
 			data: th.serialize()
 		}).done(function () {
 			alert("Thank you!");

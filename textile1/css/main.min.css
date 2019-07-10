@@ -7185,6 +7185,27 @@ body textarea:required:valid {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   /****/
+  .header .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .header .content .right .video {
+      width: 200px;
+      height: 200px; } }
+    @media only screen and (max-width: 992px) and (min-width: 320px) {
+      .header .content .right .video {
+        width: -webkit-calc(200px + 600 * ((100vw - 320px) / 880));
+        width: calc(200px + 600 * ((100vw - 320px) / 880));
+        height: -webkit-calc(200px + 600 * ((100vw - 320px) / 880));
+        height: calc(200px + 600 * ((100vw - 320px) / 880)); } }
+    @media only screen and (max-width: 992px) and (min-width: 1200px) {
+      .header .content .right .video {
+        width: 800px;
+        height: 800px; } }
+
+@media only screen and (max-width: 992px) {
   .popup-content {
     position: fixed;
     z-index: 2;
@@ -7331,6 +7352,27 @@ body textarea:required:valid {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 600px) {
   /****/
+  .header .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .header .content .right .video {
+      width: 100px;
+      height: 100px; } }
+    @media only screen and (max-width: 600px) and (min-width: 320px) {
+      .header .content .right .video {
+        width: -webkit-calc(100px + 100 * ((100vw - 320px) / 880));
+        width: calc(100px + 100 * ((100vw - 320px) / 880));
+        height: -webkit-calc(100px + 100 * ((100vw - 320px) / 880));
+        height: calc(100px + 100 * ((100vw - 320px) / 880)); } }
+    @media only screen and (max-width: 600px) and (min-width: 1200px) {
+      .header .content .right .video {
+        width: 200px;
+        height: 200px; } }
+
+@media only screen and (max-width: 600px) {
   .section1 {
     padding-top: 20px; }
     .section1 .s1-content {
@@ -7595,4 +7637,21 @@ body textarea:required:valid {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  /**/ }
+  /**/
+  /* Medium Devices, Desktops */ }
+
+@media only screen and (max-height: 500px) and (min-width: 1200px) {
+  /****/
+  .header .content .right .video {
+    width: 100px;
+    height: 100px; } }
+  @media only screen and (max-height: 500px) and (min-width: 1200px) and (min-width: 320px) {
+    .header .content .right .video {
+      width: -webkit-calc(100px + 300 * ((100vw - 320px) / 880));
+      width: calc(100px + 300 * ((100vw - 320px) / 880));
+      height: -webkit-calc(100px + 300 * ((100vw - 320px) / 880));
+      height: calc(100px + 300 * ((100vw - 320px) / 880)); } }
+  @media only screen and (max-height: 500px) and (min-width: 1200px) and (min-width: 1200px) {
+    .header .content .right .video {
+      width: 400px;
+      height: 400px; } }

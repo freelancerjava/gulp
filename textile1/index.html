@@ -1668,13 +1668,13 @@
 		function initMap() {
 			// The location of Uluru
 			var uluru = {
-				lat: -25.344,
-				lng: 131.036
+				lat: 41.3049552,
+				lng: 69.2474084
 			};
 			// The map, centered at Uluru
 			var map = new google.maps.Map(
 				document.getElementById('map'), {
-					zoom: 4,
+					zoom: 18,
 					center: uluru
 				});
 			// The marker, positioned at Uluru
@@ -1686,7 +1686,7 @@
 	</script>
 	<script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUw-ntjhs_6HqFd6c2UtfrpsHaX5LiHzU&callback=initMap">
-	</script>
+		</script>
 	<script>
 		! function (e) {
 			"use strict";
@@ -1865,6 +1865,19 @@
 					<h2 class="subtitle">
 						сейчас один из ведущих компаний на рынке Узбекистана
 					</h2>
+					<div class="text">
+						<p>
+							ООО «Finest Invest » действует с 2016 года,
+							и за этот период, изучив рынок потребителей,
+							превратилась в одну из ведущих компаний на
+							рынке Узбекистана по окрашиванию пряжи - х/б,
+							нейлоновых, полиэстеровых и всех видов пряжи
+							из целлюлозы, текстильных, натуральных волокон и нитей,
+							в состав компании входит завод по производству BOPP
+							пленок и производство джинных и литерных -
+							стальных дисков заготовок для пил хлопкоочистительных машин.
+						</p>
+					</div>
 				</div>
 				<div class="right">
 					<div class="video">
@@ -1937,7 +1950,7 @@
 							строительству нового производства джинных и литерных
 							- стальных дисков заготовок для пил хлопкоочистительных машин.
 							Сегодня компания вышла на проектные мощности и стабильно работает.
-							В производстве используются сырье из термически обработанной стали марки 65Г и У8Г.
+							В производстве используются сырье из термически обработанной стали марки 65Г.
 							Также продукция прошла сертификат соответствия по требованиям ГОСТ.
 							Ведется строгий контроль качества на каждом этапе производства,
 							начиная с сырья до готовой продукции. Весь производственный
@@ -2055,7 +2068,7 @@
 						<div class="p-title">
 							диски заготовки
 						</div>
-						<div class="price">
+						<div class="price hidden">
 							$ 55.99
 						</div>
 						<div class="show">
@@ -2069,7 +2082,7 @@
 						<div class="p-title">
 							швейные нити из 100% полиэстера
 						</div>
-						<div class="price">
+						<div class="price hidden">
 							$ 7.99
 						</div>
 						<div class="show">
@@ -2081,9 +2094,9 @@
 							<img src="./img/p3-lenta.png" alt="">
 						</div>
 						<div class="p-title">
-							полипропиленовые пленки
+							БОПП пленки
 						</div>
-						<div class="price">
+						<div class="price hidden">
 							$ 23.99
 						</div>
 						<div class="show">
@@ -2158,9 +2171,8 @@
 									<i class="fa fa-map-marker"></i>
 								</div>
 								<div class="fi-text">
-									110300, Республика Узбекистан, Ташкентская область, Ахангаранский район, Озодлик
-									Эйвалек
-									МФЙ, СЭЗ «Ангрен»
+									110300, Республика Узбекистан, Ташкентская область,
+									Ахангаранский район, СЭЗ «Ангрен»
 								</div>
 							</div>
 							<div class="post">
@@ -2221,7 +2233,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="img" >
+				<div class="img">
 					<!-- <img src="./img/map.png" alt=""> -->
 					<div id="map"></div>
 				</div>
@@ -2261,13 +2273,13 @@
 	<script>
 		var scr = {
 			"scripts": [{
-					"src": "js/libs.js",
-					"async": false
-				},
-				{
-					"src": "js/common.js",
-					"async": false
-				}
+				"src": "js/libs.js",
+				"async": false
+			},
+			{
+				"src": "js/common.js",
+				"async": false
+			}
 			]
 		};
 		! function (t, n, r) {
